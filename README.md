@@ -2,6 +2,8 @@
 
 A highly polished, production-quality landing page hero section built for a legal services platform. This project features a split-layout design, dark mode support, and complex, dynamic floating card animations.
 
+# Deployment Link: https://praavalegal-component.vercel.app/
+
 ## Features
 
 - **Pixel-Perfect Responsive Design**: Looks stunning on both desktop and mobile devices. Elements stack gracefully on smaller screens.
