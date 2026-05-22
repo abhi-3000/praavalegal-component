@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Praava Legal - Animated Hero Section
+
+A highly polished, production-quality landing page hero section built for a legal services platform. This project features a split-layout design, dark mode support, and complex, dynamic floating card animations.
+
+## Features
+
+- **Pixel-Perfect Responsive Design**: Looks stunning on both desktop and mobile devices. Elements stack gracefully on smaller screens.
+- **Dynamic Animations**: Built with **Framer Motion**, featuring staggered fade-ins, independent hover interactions, and subtle ambient floating effects (achieved via modern CSS translate properties).
+- **Dark Mode Ready**: Fully integrated with `next-themes`, ensuring the platform remains beautiful and accessible in both light and dark modes.
+- **Modern Tech Stack**: Utilizes the latest standards, including Next.js App Router and Tailwind CSS v4.
+
+## 🛠 Tech Stack
+
+- **Framework**: Next.js 14+ (App Router)
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion & CSS Keyframes
+- **Icons**: Lucide React
+- **Theming**: next-themes
+
+---
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to run the project locally on your machine.
+
+### 1. Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your system (v18 or higher is recommended).
+
+### 2. Clone the Repository
+
+Open your terminal and clone this project to your local machine:
+
+```bash
+git clone https://github.com/abhi-3000/praavalegal-component.git
+```
+
+### 3. Navigate into the Directory
+
+```bash
+cd praavalegal-component
+```
+
+### 4. Install Dependencies
+
+Install all the required packages (Framer Motion, Tailwind, etc.):
+
+```bash
+npm install
+```
+
+### 5. Run the Development Server
+
+Start the local server to see the project in action:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 6. View in Browser
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `app/page.js` - The main Hero component containing the layout and animation logic.
+- `app/globals.css` - Global stylesheet containing Tailwind configurations and custom floating keyframe animations.
+- `components/ThemeToggle.jsx` - Custom light/dark mode switcher component.
+- `components/theme-provider.jsx` - Next-themes provider wrapper for the application.
