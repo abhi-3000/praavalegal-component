@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Receipt, Gavel, ListTodo, FileText } from "lucide-react";
 import joanIcon from "@/icons/joan.webp";
+import { FloatingCard } from "@/components/FloatingCard";
+import { BackgroundBlob } from "@/components/BackgroundBlob";
 
 export default function Home() {
   const containerVariants = {
@@ -30,68 +32,68 @@ export default function Home() {
       <ThemeToggle />
 
       <div className="block lg:hidden">
-        <motion.div
-          animate={{ y: [0, -10, 0] }}
-          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -left-10 bottom-[150px] h-[36.05px] w-[75px] rotate-[170.73deg] rounded-[90px] bg-[#E3EAF8] blur-[0.5px] dark:bg-[#E3EAF8]/10"
+        <BackgroundBlob
+          animateY={[0, -10, 0]}
+          duration={5}
+          className="-left-10 bottom-[150px] h-[36.05px] w-[75px] rotate-[170.73deg] rounded-[90px] bg-[#E3EAF8] dark:bg-[#E3EAF8]/10"
         />
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -left-6 bottom-[105px] h-[36.05px] w-[80px] -rotate-180 rounded-l-[90px] bg-[#E3EAF8] blur-[0.5px] dark:bg-[#E3EAF8]/10"
+        <BackgroundBlob
+          animateY={[0, 10, 0]}
+          duration={6}
+          className="-left-6 bottom-[105px] h-[36.05px] w-[80px] -rotate-180 rounded-l-[90px] bg-[#E3EAF8] dark:bg-[#E3EAF8]/10"
         />
-        <motion.div
-          animate={{ y: [0, -15, 0] }}
-          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -left-2 bottom-[60px] h-[36.05px] w-[134.19px] -rotate-180 rounded-l-[90px] bg-[#E3EAF8] blur-[0.5px] dark:bg-[#E3EAF8]/10"
+        <BackgroundBlob
+          animateY={[0, -15, 0]}
+          duration={7}
+          className="-left-2 bottom-[60px] h-[36.05px] w-[134.19px] -rotate-180 rounded-l-[90px] bg-[#E3EAF8] dark:bg-[#E3EAF8]/10"
         />
-        <motion.div
-          animate={{ y: [0, 15, 0] }}
-          transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute right-[-40px] top-[110px] h-[36.05px] w-[99.06px] rotate-[9.27deg] rounded-l-[90px] rounded-r-[15px] bg-[#E3EAF8] blur-[0.5px] dark:bg-[#E3EAF8]/10"
+        <BackgroundBlob
+          animateY={[0, 15, 0]}
+          duration={5.5}
+          className="right-[-40px] top-[110px] h-[36.05px] w-[99.06px] rotate-[9.27deg] rounded-l-[90px] rounded-r-[15px] bg-[#E3EAF8] dark:bg-[#E3EAF8]/10"
         />
-        <motion.div
-          animate={{ y: [0, -10, 0] }}
-          transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute right-[-25px] top-[155px] h-[36.05px] w-[143.2px] rounded-l-[90px] bg-[#E3EAF8] blur-[0.5px] dark:bg-[#E3EAF8]/10"
+        <BackgroundBlob
+          animateY={[0, -10, 0]}
+          duration={6.5}
+          className="right-[-25px] top-[155px] h-[36.05px] w-[143.2px] rounded-l-[90px] bg-[#E3EAF8] dark:bg-[#E3EAF8]/10"
         />
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute right-[-15px] top-[200px] h-[36.05px] w-[86.12px] rounded-l-[90px] bg-[#E3EAF8] blur-[0.5px] dark:bg-[#E3EAF8]/10"
+        <BackgroundBlob
+          animateY={[0, 10, 0]}
+          duration={4.5}
+          className="right-[-15px] top-[200px] h-[36.05px] w-[86.12px] rounded-l-[90px] bg-[#E3EAF8] dark:bg-[#E3EAF8]/10"
         />
       </div>
 
       <div className="hidden lg:block">
-        <motion.div
-          animate={{ y: [0, -20, 0] }}
-          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -left-28 bottom-[290px] h-[88px] w-[280px] -rotate-[10deg] rounded-full bg-[#e7ecf8] blur-[0.5px] dark:bg-[#e7ecf8]/10"
+        <BackgroundBlob
+          animateY={[0, -20, 0]}
+          duration={6}
+          className="-left-28 bottom-[290px] h-[88px] w-[280px] -rotate-[10deg] rounded-full bg-[#e7ecf8] dark:bg-[#e7ecf8]/10"
         />
-        <motion.div
-          animate={{ y: [0, 15, 0] }}
-          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -left-16 bottom-[180px] h-[88px] w-[300px] rounded-full bg-[#e7ecf8] blur-[0.5px] dark:bg-[#e7ecf8]/10"
+        <BackgroundBlob
+          animateY={[0, 15, 0]}
+          duration={7}
+          className="-left-16 bottom-[180px] h-[88px] w-[300px] rounded-full bg-[#e7ecf8] dark:bg-[#e7ecf8]/10"
         />
-        <motion.div
-          animate={{ y: [0, -15, 0] }}
-          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute -left-8 bottom-[70px] h-[88px] w-[480px] rounded-full bg-[#e7ecf8] blur-[0.5px] dark:bg-[#e7ecf8]/10"
+        <BackgroundBlob
+          animateY={[0, -15, 0]}
+          duration={5}
+          className="-left-8 bottom-[70px] h-[88px] w-[480px] rounded-full bg-[#e7ecf8] dark:bg-[#e7ecf8]/10"
         />
-        <motion.div
-          animate={{ y: [0, 20, 0] }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute right-[-78px] top-[112px] h-[88px] w-[280px] rotate-[8deg] rounded-full bg-[#e7ecf8] blur-[0.5px] dark:bg-[#e7ecf8]/10"
+        <BackgroundBlob
+          animateY={[0, 20, 0]}
+          duration={8}
+          className="right-[-78px] top-[112px] h-[88px] w-[280px] rotate-[8deg] rounded-full bg-[#e7ecf8] dark:bg-[#e7ecf8]/10"
         />
-        <motion.div
-          animate={{ y: [0, -20, 0] }}
-          transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute right-[-45px] top-[224px] h-[88px] w-[400px] rounded-full bg-[#e7ecf8] blur-[0.5px] dark:bg-[#e7ecf8]/10"
+        <BackgroundBlob
+          animateY={[0, -20, 0]}
+          duration={6.5}
+          className="right-[-45px] top-[224px] h-[88px] w-[400px] rounded-full bg-[#e7ecf8] dark:bg-[#e7ecf8]/10"
         />
-        <motion.div
-          animate={{ y: [0, 15, 0] }}
-          transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute right-[-24px] top-[334px] h-[88px] w-[300px] rounded-full bg-[#e7ecf8] blur-[0.5px] dark:bg-[#e7ecf8]/10"
+        <BackgroundBlob
+          animateY={[0, 15, 0]}
+          duration={5.5}
+          className="right-[-24px] top-[334px] h-[88px] w-[300px] rounded-full bg-[#e7ecf8] dark:bg-[#e7ecf8]/10"
         />
       </div>
 
@@ -130,59 +132,35 @@ export default function Home() {
           initial="hidden"
           animate="visible"
         >
-          <motion.div
+          <FloatingCard
             variants={itemVariants}
-            whileHover={{
-              rotate: 5,
-              scale: 1.05,
-            }}
-            transition={{
-              duration: 0.09,
-              ease: "easeOut",
-            }}
-            className="card-base card-hover float-c1 absolute right-[160px] top-[290px] w-[430px] h-[96px] rotate-[11deg] bg-[#2f46ff] shadow-[0_14px_32px_rgba(47,70,255,0.28)] flex items-center p-4 !rounded-[100px] text-white"
-          >
-            <span className="h-20 w-20 flex items-center justify-center">
-              <Receipt className="h-10 w-10 text-white" />
-            </span>
+            whileHover={{ rotate: 5, scale: 1.05 }}
+            transition={{ duration: 0.09, ease: "easeOut" }}
+            className="float-c1 absolute right-[160px] top-[290px] w-[430px] h-[96px] p-4"
+            color="blue"
+            rotation="rotate-[11deg]"
+            icon={Receipt}
+            label="Billing"
+          />
 
-            <span className="text-[26px] ml-3 font-light tracking-tight">
-              Billing
-            </span>
-          </motion.div>
-
-          <motion.div
+          <FloatingCard
             variants={itemVariants}
-            whileHover={{
-              rotate: -8,
-              scale: 1.05,
-            }}
-            transition={{
-              duration: 0.09,
-              ease: "easeOut",
-            }}
-            className="card-base card-hover float-c2 absolute left-[240px] top-[430px] w-[360px] h-[96px] -rotate-[11deg] bg-[#e67e2b] shadow-[0_14px_32px_rgba(230,126,43,0.28)] flex items-center p-4 !rounded-[100px] text-white"
-          >
-            <span className="h-20 w-20 flex items-center justify-center">
-              <Gavel className="h-10 w-10 text-white" />
-            </span>
+            whileHover={{ rotate: -8, scale: 1.05 }}
+            transition={{ duration: 0.09, ease: "easeOut" }}
+            className="float-c2 absolute left-[240px] top-[430px] w-[360px] h-[96px] p-4"
+            color="orange"
+            rotation="-rotate-[11deg]"
+            icon={Gavel}
+            label="Matters"
+          />
 
-            <span className="text-[26px] font-light tracking-tight ml-3">
-              Matters
-            </span>
-          </motion.div>
-
-          <motion.div
+          <FloatingCard
             variants={itemVariants}
-            whileHover={{
-              rotate: 4,
-              scale: 1.05,
-            }}
-            transition={{
-              duration: 0.09,
-              ease: "easeOut",
-            }}
-            className="card-base card-hover float-c3 absolute left-[620px] top-[430px] h-[96px] w-[390px] rotate-[4deg] bg-[#9ea6ef] shadow-[0_14px_32px_rgba(106,123,214,0.30)] flex items-center pl-10 !rounded-[100px] "
+            whileHover={{ rotate: 4, scale: 1.05 }}
+            transition={{ duration: 0.09, ease: "easeOut" }}
+            className="float-c3 absolute left-[620px] top-[430px] h-[96px] w-[390px] pl-10"
+            color="purple"
+            rotation="rotate-[4deg]"
           >
             <div className="h-11 w-1 rounded-full bg-[#eb7a24]" />
 
@@ -215,47 +193,29 @@ export default function Home() {
                 MAT-2233 - 2 h ago
               </p>
             </div>
-          </motion.div>
+          </FloatingCard>
 
-          <motion.div
+          <FloatingCard
             variants={itemVariants}
-            whileHover={{
-              rotate: 0,
-              scale: 1.05,
-            }}
-            transition={{
-              duration: 0.09,
-              ease: "easeOut",
-            }}
-            className="card-base card-hover float-c1 absolute left-[calc(50%-180px)] top-[572px] w-[430px] h-[96px] bg-[#2f254d] shadow-[0_14px_32px_rgba(47,37,77,0.35)] flex items-center p-4 !rounded-[100px] "
-          >
-            <span className="h-20 w-20 flex items-center justify-center">
-              <ListTodo className="h-10 w-10 text-[#f08c2b]" />
-            </span>
-            <span className="text-[26px] font-light tracking-tight text-[#f08c2b] ml-3">
-              Tasks
-            </span>
-          </motion.div>
+            whileHover={{ rotate: 0, scale: 1.05 }}
+            transition={{ duration: 0.09, ease: "easeOut" }}
+            className="float-c1 absolute left-[calc(50%-180px)] top-[572px] w-[430px] h-[96px] p-4"
+            color="dark"
+            rotation=""
+            icon={ListTodo}
+            label="Tasks"
+          />
 
-          <motion.div
+          <FloatingCard
             variants={itemVariants}
-            whileHover={{
-              rotate: -4,
-              scale: 1.05,
-            }}
-            transition={{
-              duration: 0.09,
-              ease: "easeOut",
-            }}
-            className="card-base card-hover float-c2 absolute left-[calc(50%+280px)] top-[540px] w-[430px] h-[96px] -rotate-[10deg] bg-[#2f254d] shadow-[0_14px_32px_rgba(47,37,77,0.35)] flex items-center p-4 !rounded-[100px] "
-          >
-            <span className="h-20 w-20 flex items-center justify-center ">
-              <FileText className="h-10 w-10 text-[#f08c2b]" />
-            </span>
-            <span className="text-[26px] font-light tracking-tight text-[#f08c2b] ml-3">
-              Documents
-            </span>
-          </motion.div>
+            whileHover={{ rotate: -4, scale: 1.05 }}
+            transition={{ duration: 0.09, ease: "easeOut" }}
+            className="float-c2 absolute left-[calc(50%+280px)] top-[540px] w-[430px] h-[96px] p-4"
+            color="dark"
+            rotation="-rotate-[10deg]"
+            icon={FileText}
+            label="Documents"
+          />
         </motion.div>
 
         <motion.div
@@ -264,33 +224,29 @@ export default function Home() {
           initial="hidden"
           animate="visible"
         >
-          <motion.div
+          <FloatingCard
+            isMobile
             variants={itemVariants}
-            className="card-base float-c1 w-full h-[76px] bg-[#2f46ff] shadow-[0_14px_32px_rgba(47,70,255,0.28)] flex items-center p-3 !rounded-[100px] text-white"
-          >
-            <span className="h-14 w-14 flex items-center justify-center">
-              <Receipt className="h-7 w-7 text-white" />
-            </span>
-            <span className="text-[20px] ml-3 font-light tracking-tight">
-              Billing
-            </span>
-          </motion.div>
+            className="float-c1 w-full h-[76px] p-3"
+            color="blue"
+            icon={Receipt}
+            label="Billing"
+          />
 
-          <motion.div
+          <FloatingCard
+            isMobile
             variants={itemVariants}
-            className="card-base float-c2 w-full h-[76px] bg-[#e67e2b] shadow-[0_14px_32px_rgba(230,126,43,0.28)] flex items-center p-3 !rounded-[100px] text-white"
-          >
-            <span className="h-14 w-14 flex items-center justify-center">
-              <Gavel className="h-7 w-7 text-white" />
-            </span>
-            <span className="text-[20px] font-light tracking-tight ml-3">
-              Matters
-            </span>
-          </motion.div>
+            className="float-c2 w-full h-[76px] p-3"
+            color="orange"
+            icon={Gavel}
+            label="Matters"
+          />
 
-          <motion.div
+          <FloatingCard
+            isMobile
             variants={itemVariants}
-            className="card-base float-c3 w-full h-[76px] bg-[#9ea6ef] shadow-[0_14px_32px_rgba(106,123,214,0.30)] flex items-center pl-8 !rounded-[100px]"
+            className="float-c3 w-full h-[76px] pl-8"
+            color="purple"
           >
             <div className="h-8 w-1 rounded-full bg-[#eb7a24]" />
             <div className="grid h-9 w-9 ml-2 place-items-center rounded-full bg-[#f4c8ab] shrink-0">
@@ -319,31 +275,25 @@ export default function Home() {
                 MAT-2233 - 2 h ago
               </p>
             </div>
-          </motion.div>
+          </FloatingCard>
 
-          <motion.div
+          <FloatingCard
+            isMobile
             variants={itemVariants}
-            className="card-base float-c1 w-full h-[76px] bg-[#2f254d] shadow-[0_14px_32px_rgba(47,37,77,0.35)] flex items-center p-3 !rounded-[100px]"
-          >
-            <span className="h-14 w-14 flex items-center justify-center">
-              <ListTodo className="h-7 w-7 text-[#f08c2b]" />
-            </span>
-            <span className="text-[20px] font-light tracking-tight text-[#f08c2b] ml-3">
-              Tasks
-            </span>
-          </motion.div>
+            className="float-c1 w-full h-[76px] p-3"
+            color="dark"
+            icon={ListTodo}
+            label="Tasks"
+          />
 
-          <motion.div
+          <FloatingCard
+            isMobile
             variants={itemVariants}
-            className="card-base float-c2 w-full h-[76px] bg-[#2f254d] shadow-[0_14px_32px_rgba(47,37,77,0.35)] flex items-center p-3 !rounded-[100px]"
-          >
-            <span className="h-14 w-14 flex items-center justify-center">
-              <FileText className="h-7 w-7 text-[#f08c2b]" />
-            </span>
-            <span className="text-[20px] font-light tracking-tight text-[#f08c2b] ml-3">
-              Documents
-            </span>
-          </motion.div>
+            className="float-c2 w-full h-[76px] p-3"
+            color="dark"
+            icon={FileText}
+            label="Documents"
+          />
         </motion.div>
       </section>
     </main>
